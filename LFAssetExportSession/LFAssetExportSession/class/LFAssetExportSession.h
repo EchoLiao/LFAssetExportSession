@@ -161,6 +161,11 @@ typedef NS_ENUM(NSUInteger, LFAssetExportSessionPreset) {
 @property (nonatomic, assign, readonly) AVAssetExportSessionStatus status;
 
 /**
+ * The estimated bitrate(Kbps) of the export session.
+ */
+@property (nonatomic, assign, readonly) float estimatedBitrate;
+
+/**
  * The estimated size(KB) of the export session.
  */
 @property (nonatomic, assign, readonly) float estimatedExportSize;
