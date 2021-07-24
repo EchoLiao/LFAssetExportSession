@@ -538,8 +538,7 @@ inline static NSDictionary *lf_assetExportAudioConfig(void)
         }
         
         if (self.videoInput) {
-            NSDictionary *pixelBufferAttributes = @
-            {
+            NSDictionary *pixelBufferAttributes = @{
                 (id)kCVPixelBufferPixelFormatTypeKey: @(kCVPixelFormatType_32BGRA),
                 (id)kCVPixelBufferWidthKey: @(self.inputBufferSize.width),
                 (id)kCVPixelBufferHeightKey: @(self.inputBufferSize.height),
